@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadProducts();
     updateCartCount();
+    loadCartItems();
 });
 
 function loadProducts() {
@@ -29,9 +30,21 @@ function addToCart(name, price) {
     cart.push({ name, price });
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCount();
+    loadCartItems();
 }
 
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     document.getElementById("cart-count").innerText = cart.length;
+}
+
+function loadCartItems() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartItemsContainer = document.getElementById("cart-items");
+    cartItemsContainer.innerHTML = "";
+    cart.forEach(item => {
+        let cartItem = document.createElement("p");
+        cartItem.innerText = `${item.name} - ${item.price} MAD`;
+        cartItemsContainer.appendChild(cartItem);
+    });
 }

@@ -1,100 +1,64 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetocos - Boutique Vétérinaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #008080;
-    padding: 15px;
-    color: white;
-}
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <h1>Vetocos</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Rechercher des produits...">
+            <button>🔍</button>
+        </div>
+        <div class="icons">
+            <a href="#">👤</a> <!-- User icon -->
+            <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </div>
+    </header>
 
-.search-bar input {
-    padding: 8px;
-    width: 300px;
-}
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <ul>
+            <li><a href="#">Chien</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Équine</a></li>
+            <li><a href="#">Oiseaux</a></li>
+            <li><a href="#">Offres spéciales</a></li>
+            <li><a href="#">Ordonnance</a></li>
+            <li><a href="#">Marques</a></li>
+        </ul>
+    </nav>
 
-.search-bar button {
-    padding: 8px;
-    background: white;
-    border: none;
-    cursor: pointer;
-}
+    <!-- BANNER SECTION -->
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Offres de Février</h2>
+            <p>Profitez jusqu'à 25% de réduction sur vos produits vétérinaires préférés.</p>
+            <button class="cta-button">Voir les offres</button>
+        </div>
+        <div class="banner-image">
+            <img src="banner-image.jpg" alt="Promo Vetocos">
+        </div>
+    </section>
 
-.icons span {
-    margin-left: 10px;
-    cursor: pointer;
-}
+    <!-- PRODUCTS SECTION -->
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <div id="product-list"></div>
+    </section>
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    background-color: #004d4d;
-    padding: 10px;
-}
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Vetocos - Tous droits réservés</p>
+    </footer>
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.offers {
-    text-align: center;
-    padding: 30px;
-    background: #ffe5e5;
-}
-
-.offer-banner h2 {
-    font-size: 24px;
-}
-
-.offer-banner button {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.top-deals {
-    text-align: center;
-    padding: 30px;
-}
-
-.deal-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.deal-item {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px gray;
-    width: 200px;
-    text-align: center;
-}
-
-.deal-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.deal-item button {
-    background-color: #008080;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
+</body>
+</html>

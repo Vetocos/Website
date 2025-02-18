@@ -1,36 +1,100 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetocos - Produits Vétérinaires</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>Vetocos</h1>
-        <p>Importation et distribution de produits vétérinaires</p>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#" onclick="loadPage('home')">Accueil</a></li>
-            <li><a href="#" onclick="loadPage('about')">À propos</a></li>
-            <li><a href="#" onclick="loadPage('products')">Produits</a></li>
-            <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
-        </ul>
-    </nav>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    padding: 15px;
+    color: white;
+}
 
-    <!-- Content Section (Dynamically Updated) -->
-    <section id="content">
-        <!-- Home Page Loads by Default -->
-        <h2>Bienvenue chez Vetocos</h2>
-        <p>Votre partenaire de confiance pour des produits vétérinaires de qualité supérieure.</p>
-    </section>
+.search-bar input {
+    padding: 8px;
+    width: 300px;
+}
 
-    <footer>
-        <p>&copy; 2024 Vetocos - Tous droits réservés</p>
-    </footer>
-</body>
-</html>
+.search-bar button {
+    padding: 8px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.icons span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #004d4d;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.offers {
+    text-align: center;
+    padding: 30px;
+    background: #ffe5e5;
+}
+
+.offer-banner h2 {
+    font-size: 24px;
+}
+
+.offer-banner button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.top-deals {
+    text-align: center;
+    padding: 30px;
+}
+
+.deal-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.deal-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px gray;
+    width: 200px;
+    text-align: center;
+}
+
+.deal-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.deal-item button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

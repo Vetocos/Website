@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadProducts();
-    updateCartCount();
-    loadCartItems();
 });
 
 function loadProducts() {
@@ -14,37 +12,17 @@ function loadProducts() {
                 const productElement = document.createElement("div");
                 productElement.classList.add("product");
                 productElement.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}">
+                    <img src="${product.image}" alt="${product.name}" width="200">
                     <h3>${product.name}</h3>
                     <p>${product.description}</p>
                     <p><strong>Prix:</strong> ${product.price} MAD</p>
-                    <button onclick="addToCart('${product.name}', '${product.price}')">Ajouter au panier</button>
+                    <button onclick="orderProduct('${product.name}', '${product.price}')">Commander</button>
                 `;
                 productList.appendChild(productElement);
             });
         });
 }
 
-function addToCart(name, price) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push({ name, price });
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCartCount();
-    loadCartItems();
-}
-
-function updateCartCount() {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    document.getElementById("cart-count").innerText = cart.length;
-}
-
-function loadCartItems() {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    let cartItemsContainer = document.getElementById("cart-items");
-    cartItemsContainer.innerHTML = "";
-    cart.forEach(item => {
-        let cartItem = document.createElement("p");
-        cartItem.innerText = `${item.name} - ${item.price} MAD`;
-        cartItemsContainer.appendChild(cartItem);
-    });
+function orderProduct(name, price) {
+    alert(`Vous avez commandé ${name} pour ${price} MAD`);
 }

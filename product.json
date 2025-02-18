@@ -3,34 +3,30 @@
         "name": "Antibiotique Vétérinaire",
         "description": "Un antibiotique puissant pour les animaux.",
         "price": "250",
-        "image": "https://via.placeholder.com/150"
+        "image": "images/product1.jpg"
     },
     {
         "name": "Supplément Nutritionnel",
         "description": "Améliore la santé des animaux de ferme.",
         "price": "180",
-        "image": "https://via.placeholder.com/150"
+        "image": "images/product2.jpg"
     },
     {
         "name": "Matériel de Chirurgie",
         "description": "Outils pour interventions vétérinaires.",
         "price": "500",
-        "image": "https://via.placeholder.com/150"
+        "image": "images/product3.jpg"
     },
     {
         "name": "Ivermectine 1% Injection",
-        "description": "Traitement antiparasitaire contre une large gamme de parasites internes et externes.",
+        "description": "Traitement antiparasitaire efficace contre une large gamme de parasites internes et externes.",
         "price": "300",
-        "image": "https://ahmedipharm.en.made-in-china.com/product/gdZTYuRMHpGb/China-Animal-Medicines-Veterinary-Drugs-Ivermectin-Injection-1-50ml-for-Veterinary-Use.jpg"
+        "image": "images/product4.jpg"
     },
     {
         "name": "Triclabendazole + Albendazole + Praziquantel",
         "description": "Comprimés antiparasitaires pour le traitement des parasites intestinaux chez les bovins, moutons et chèvres.",
         "price": "400",
-        "image": "https://www.zoovetpets.shop/product/100-tablets-triclabendazole-albendazole-praziquantel-deworming-of-cattle-camels-buffalo-sheep-goats-when-affected-by-nematodes-cestods-and-trematodes.jpg"
-    },
-    {
-        "name": "Flunixine Meglumine Injection",
-        "description": "Anti-inflammatoire et analgésique utilisé pour soulager la douleur et la fièvre chez les animaux.",
-        "price": "280",
-        "image": "https://5.imimg.com/data5/SELLE
+        "image": "images/product5.jpg"
+    }
+]

@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetocos - Produits Vétérinaires</title>
+    <title>Vetocos - Boutique Vétérinaire</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <h1>Vetocos</h1>
         <p>Importation et distribution de produits vétérinaires</p>
     </header>
 
+    <!-- NAVIGATION -->
     <nav>
         <ul>
-            <li><a href="#about">À propos</a></li>
+            <li><a href="#home">Accueil</a></li>
             <li><a href="#products">Produits</a></li>
+            <li><a href="#cart">Panier (<span id="cart-count">0</span>)</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>À propos de Vetocos</h2>
-        <p>Vetocos est spécialisé dans l'importation, la vente et la distribution de produits vétérinaires, cosmétiques, para médicaux et matériel de chirurgie.</p>
-        <p><strong>CEO:</strong> Aziz Sahib</p>
-        <p><strong>Adresse:</strong> Lot Hawid El Mae N°63 - Skhirate (M)</p>
-    </section>
-
+    <!-- PRODUCT LIST -->
     <section id="products">
         <h2>Nos Produits</h2>
         <div id="product-list"></div>
     </section>
 
+    <!-- SHOPPING CART -->
+    <section id="cart">
+        <h2>Votre Panier</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-btn">Passer la commande</button>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
         <h2>Contactez-nous</h2>
         <p>Email: contact@vetocos.com</p>
         <p>Téléphone: +212 6 XX XX XX XX</p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>&copy; 2024 Vetocos - Tous droits réservés</p>
     </footer>
+
+</body>
+</html>

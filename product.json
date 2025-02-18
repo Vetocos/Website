@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Antibiotique Vétérinaire",
+        "description": "Un antibiotique puissant pour les animaux.",
+        "price": "250",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "name": "Supplément Nutritionnel",
+        "description": "Améliore la santé des animaux de ferme.",
+        "price": "180",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "name": "Matériel de Chirurgie",
+        "description": "Outils pour interventions vétérinaires.",
+        "price": "500",
+        "image": "https://via.placeholder.com/150"
+    }
+]

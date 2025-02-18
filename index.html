@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetocos - Boutique Vétérinaire</title>
+    <title>Vetocos - Produits Vétérinaires</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- HEADER SECTION -->
+    <!-- HEADER -->
     <header>
-        <div class="logo">
-            <h1>Vetocos</h1>
-        </div>
-        <div class="search-bar">
-            <input type="text" id="search" placeholder="Rechercher des produits...">
-            <button>🔍</button>
-        </div>
-        <div class="icons">
-            <a href="#">👤</a> <!-- User icon -->
-            <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+        <div class="container">
+            <div class="logo">
+                <h1>Vetocos</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Rechercher des produits...">
+                <button>🔍</button>
+            </div>
+            <div class="icons">
+                <a href="#">👤</a> <!-- User Icon -->
+                <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+            </div>
         </div>
     </header>
 
     <!-- NAVIGATION MENU -->
     <nav>
         <ul>
-            <li><a href="#">Chien</a></li>
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">Équine</a></li>
-            <li><a href="#">Oiseaux</a></li>
-            <li><a href="#">Offres spéciales</a></li>
-            <li><a href="#">Ordonnance</a></li>
+            <li><a href="#">Chien ▼</a></li>
+            <li><a href="#">Chat ▼</a></li>
+            <li><a href="#">Petits Animaux ▼</a></li>
+            <li><a href="#">Équine ▼</a></li>
+            <li><a href="#">Oiseaux & Exotiques ▼</a></li>
+            <li><a href="#">Offres Spéciales</a></li>
+            <li><a href="#">Ordonnances</a></li>
             <li><a href="#">Marques</a></li>
         </ul>
     </nav>
 
-    <!-- BANNER SECTION -->
+    <!-- BANNER -->
     <section class="banner">
         <div class="banner-text">
             <h2>Offres de Février</h2>
@@ -49,7 +52,7 @@
         </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
+    <!-- PRODUCT LIST -->
     <section id="products">
         <h2>Nos Produits</h2>
         <div id="product-list"></div>
